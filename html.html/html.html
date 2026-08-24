@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>linguagem HTML</title>
+
+
     <style>
         h1{ color:blue;}
         span{font-size: 18pt}
@@ -18,10 +20,33 @@
         div{
             background-color: rgb(173, 216, 230);
         }
-        table,td{border:1px solid black;
+        table,td{
+            color: white;
+        border:1px solid black;
         border-collapse: collapse;
+        background-color: rgb(81, 126, 168);
+        
     }
+    th,caption{
+        font-weight: bolder;
+        font-size: 18px;
+        border:1px solid black;
+        border-collapse: collapse;
+        background-color: rgb(39, 103, 163);
+    }
+
+    .dois{
+        font-size: 18px;
+        background-color: rgb(151, 224, 161);
+    }
+    .tabela,.um{
+        font-size: 18px;
+         background-color: rgb(76, 138, 84);
+    }
+
     </style>
+
+
 </head>
 <body>
     <div>
@@ -73,8 +98,11 @@
     <dt>Café</dt>
     <dd>bebida obtida com a torra e fervura de grão de café, essêncial a vida.</dd>
 </dl>
+
+<section
 </section id table>
 <p>blablablablabla</p>
+
 
 <table>
     <caption>Churrasco Finaleira</caption>
@@ -102,6 +130,50 @@
     </tr>  
 
 </table>
+<table class="tabela">
+    <tr> <th class="um">indice</th> <th class="um">nome</th> 
+    <tr><td class="dois">1</td><td class="dois">Brenno</td> <td class="dois">17</td></tr>
+    <tr><td class="um">2</td><td class="um">Bruno</td> <td class="um">18</td></tr> 
+    <tr><td class="dois">3</td><td class="dois">Braian</td> <td class="dois">17</td></tr> 
+    <tr><td class="um" colspan="2">Total aluno</td><td class="um">67  </td></tr>
+</table>
+</section>
+
+
+<section>
+    <h1>Formulário</h1>
+    <p>As tags de formulario permitem entrada de dado</p>
+
+    <form action="">
+        <label for="inputnome">Nome</label>
+        <input id="inputnome" type="text">
+
+
+        <label for="inputTelefone">Telefone</label>
+        <input id="inputnome" type="tel">
+        <input type="submit" value="Enviar">
+
+
+    </form>
+
+    <form action="https://google.com/search" method="get">
+        <input type="text" name="q">
+        <input type="text" name="bla">
+        <input type="submit">
+    </form>
+
+    <form method="post">
+        <label for="usr">Usuário</label>
+        <input id="usr" type="tex" name="usuario">
+
+        <label for="senha">Senha</label>
+        <input id="senha" type="password" name="senha">
+
+        <input type="submit">
+        <button>botão</button>
+    </form>
+
+</section>
 
 </body>
 </html>
