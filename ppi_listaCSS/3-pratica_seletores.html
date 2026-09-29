@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 3 - Seletores CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+
+        /* Título Principal */
+        h1 {
+            color: #1a2a3a;
+            text-align: center;
+        }
+
+        /* Parágrafo 1: Fonte Monospace + Azul */
+        .p1 {
+            font-family: 'Courier New', Courier, monospace;
+            color: #1e3a8a;
+            font-size: 16px;
+        }
+        .p1 .destaque-p1 {
+            color: #dc2626;
+            font-weight: bold;
+            background-color: #fef08a;
+            padding: 2px 4px;
+        }
+
+        /* Parágrafo 2: Fonte Serif + Verde */
+        .p2 {
+            font-family: 'Georgia', serif;
+            color: #065f46;
+            font-size: 18px;
+        }
+        .p2 .destaque-p2 {
+            color: #7c3aed;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        /* Parágrafo 3: Fonte Sans-Serif + Laranja */
+        .p3 {
+            font-family: 'Trebuchet MS', sans-serif;
+            color: #9a3412;
+            font-size: 15px;
+        }
+        .p3 .destaque-p3 {
+            color: #0284c7;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Prática de Seletores CSS</h1>
+
+    <p class="p1">
+        Lorem ipsum dolor sit amet, <span class="destaque-p1">consectetur adipiscing</span> elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+
+    <p class="p2">
+        Ut enim ad minim veniam, quis nostrud <span class="destaque-p2">exercitation ullamco</span> laboris nisi ut aliquip ex ea commodo consequat.
+    </p>
+
+    <p class="p3">
+        Duis aute irure dolor in reprehenderit in <span class="destaque-p3">voluptate velit</span> esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+
+</body>
+</html>
