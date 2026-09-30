@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3 - Layout de Blocos</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        body {
+            min-height: 100vh;
+            background-color: #f3f4f6;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .linha-superior {
+            display: grid;
+            grid-template-columns: 1fr 150px;
+            gap: 20px;
+        }
+
+        .bloco-a {
+            background-color: #374151;
+            height: 100px;
+            border-radius: 8px;
+            padding: 15px;
+        }
+
+        .bloco-b {
+            background-color: #374151;
+            height: 100px;
+            border-radius: 8px;
+            padding: 15px;
+        }
+
+        .area-inferior {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+            gap: 20px;
+            flex: 1;
+        }
+
+        .bloco-c {
+            background-color: #374151;
+            border-radius: 8px;
+            padding: 15px;
+        }
+
+        .painel-principal {
+            background-color: #374151;
+            border-radius: 8px;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .caixa-interna {
+            background-color: #d1d5db;
+            border-radius: 8px;
+            color: #111827;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="linha-superior">
+        <div class="bloco-a">A</div>
+        <div class="bloco-b">B</div>
+    </div>
+
+    <div class="area-inferior">
+        <div class="bloco-c">C</div>
+
+        <div class="painel-principal">
+            <div class="caixa-interna">E</div>
+            <div class="caixa-interna">F</div>
+            <div class="caixa-interna">G</div>
+            <div class="caixa-interna">M</div>
+            <div class="caixa-interna">I</div>
+            <div class="caixa-interna">J</div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2 - Grid Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        body {
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 80px 1fr 60px;
+            grid-template-areas: 
+                "header header"
+                "nav content"
+                "nav footer";
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #e11d48;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav {
+            grid-area: nav;
+            background-color: #a3e635;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            grid-area: content;
+            background-color: #fdba74;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #14b8a6;
+            display: flex;
+            align-items: center;    
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">Header</div>
+    <div class="nav">Nav</div>
+    <div class="content">Content</div>
+    <div class="footer">Footer</div>
+
+</body>
+</html>

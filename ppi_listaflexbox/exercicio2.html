@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2 - Flexbox Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #e5e7eb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .card {
+            background-color: #ffffff;
+            width: 320px;
+            padding: 25px;
+            border-radius: 12px;
+            border: 3px solid #8b5cf6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+        .logo {
+            font-size: 18px;
+            color: #6b7280;
+            font-family: Arial, sans-serif;
+            margin-bottom: 10px;
+        }
+        .linha {
+            width: 100%;
+            height: 35px;
+            background-color: #e5e7eb;
+            border-radius: 6px;
+        }
+        .espaco {
+            height: 100px;
+        }
+        .circulo {
+            width: 60px;
+            height: 60px;
+            background-color: #e5e7eb;
+            border-radius: 50%;
+        }
+        .linha-curta {
+            width: 50%;
+            height: 25px;
+            background-color: #e5e7eb;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="logo">Company Logo</div>
+        <div class="linha"></div>
+        <div class="linha"></div>
+        <div class="linha"></div>
+        <div class="linha"></div>
+        <div class="espaco"></div>
+        <div class="circulo"></div>
+        <div class="linha-curta"></div>
+    </div>
+
+</body>
+</html>

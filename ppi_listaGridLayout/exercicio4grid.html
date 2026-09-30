@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 4 - Grid Responsivo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        .caixa {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            border-radius: 4px;
+        }
+
+        .c-header { background-color: #eab308; }
+        .c-banner { background-color: #ef4444; }
+        .c-left { background-color: #16a34a; }
+        .c-main { background-color: #2563eb; min-height: 300px; }
+        .c-right { background-color: #eab308; }
+        .c-low { background-color: #16a34a; }
+        .c-footer { background-color: #2563eb; }
+
+        .container {
+            display: grid;
+            padding: 10px;
+            gap: 10px;
+            grid-template-columns: 180px 1fr 180px;
+            grid-template-rows: auto auto 1fr auto auto;
+            grid-template-areas: 
+                "left header right"
+                "left banner right"
+                "left main right"
+                "left low right"
+                "footer footer footer";
+            min-height: 100vh;
+        }
+
+        .c-header { grid-area: header; }
+        .c-banner { grid-area: banner; }
+        .c-left   { grid-area: left; }
+        .c-main   { grid-area: main; }
+        .c-right  { grid-area: right; }
+        .c-low    { grid-area: low; }
+        .c-footer { grid-area: footer; }
+
+        @media screen and (max-width: 600px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="caixa c-header">Header</div>
+        <div class="caixa c-banner">Banner</div>
+        <div class="caixa c-left">Left Aside</div>
+        <div class="caixa c-main">Main Content</div>
+        <div class="caixa c-right">Right Aside</div>
+        <div class="caixa c-low">Low Content</div>
+        <div class="caixa c-footer">Footer</div>
+    </div>
+
+</body>
+</html>

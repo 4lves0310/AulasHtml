@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5 - Layout Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #cbd5e1;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .conteudo-principal {
+            display: flex;
+            flex: 1;
+        }
+
+        nav {
+            background-color: #94a3b8;
+            width: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        article {
+            background-color: #e2e8f0;
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        aside {
+            
+            background-color: #94a3b8;
+            width: 180px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        footer {
+            background-color: #cbd5e1;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>Header</header>
+
+    <div class="conteudo-principal">
+        <nav>Nav</nav>
+        <article>Article</article>
+        <aside>Aside</aside>
+    </div>
+
+    <footer>Footer</footer>
+
+</body>
+</html>

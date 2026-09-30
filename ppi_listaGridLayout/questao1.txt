@@ -1,0 +1,8 @@
+Atividade 1 - CSS Grid Garden
+
+Nível 26:
+Código: grid-template-rows: repeat(4, 20%) 1fr;
+Explicação:
+- A propriedade 'grid-template-rows' define a altura de cada linha da grelha.
+- 'repeat(4, 20%)' cria as primeiras 4 linhas com 20% da altura total do container cada uma.
+- '1fr' atribuição de 1 fração (restante do espaço) para a 5ª e última linha, fazendo a água preencher até ao final do jardim.
